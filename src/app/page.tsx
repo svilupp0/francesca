@@ -1,6 +1,43 @@
+'use client';
+
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Home() {
+  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
+
+  const projects = [
+    {
+      title: "Women In Net (PWA)",
+      description: "PWA per community tennis",
+      link: "https://women-in-tennis.vercel.app/",
+      image: "/img/WIN.jpg",
+      action: "Vedi Live"
+    },
+    {
+      title: "Great Stay Salento - Property Manager",
+      description: "Soluzione per affitti brevi",
+      link: "mailto:francescascarpellini327@gmail.com",
+      image: "/img/prop.manag.jpg",
+      action: "Richiedi Demo"
+    },
+    {
+      title: "Portfolio Ricercatrice - Full Stack Platform",
+      description: "Piattaforma per ricercatori",
+      link: "https://github.com/svilupp0/PortfolioFS-NextNEW",
+      image: "/img/portf-fs.jpg",
+      action: "Vedi Repository"
+
+    },
+    {
+      title: "Quiz di Microbiologia & AI",
+      description: "Strumento quiz con AI",
+      link: "https://svilupp0.github.io/dario-s-play/",
+      image: "/img/micro.adv.jpg",
+      action: "Esplora Progetto"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <section className="min-h-screen flex items-center justify-center px-4 relative">
@@ -52,68 +89,40 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-light text-foreground mb-12 text-center">
             Progetti
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Women in Tennis */}
-            <a
-              href="https://women-in-tennis.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white/50 rounded-lg p-6 shadow-sm border border-foreground/10 hover:shadow-md hover:scale-105 transition-all duration-300 block"
-            >
-              <h3 className="text-xl font-medium text-foreground mb-3">
-                Women In Net (PWA)
-              </h3>
-              <p className="text-foreground/70 mb-4">
-                Una Progressive Web App per la community del tennis. Gestione profili, calendario interattivo e geolocalizzazione dei campi.
-              </p>
-              <span className="inline-flex items-center text-[#0ea5e9] hover:text-[#0ea5e9]/80 transition-colors">
-                Vedi Live 
-              </span>
-            </a>
-
-            {/* Property Manager */}
-            <a
-              href="mailto:francescascarpellini327@gmail.com"
-              className="bg-white/50 rounded-lg p-6 shadow-sm border border-foreground/10 hover:shadow-md hover:scale-105 transition-all duration-300 block"
-            >
-              <h3 className="text-xl font-medium text-foreground mb-3">
-                Great Stay Salento - Property Manager
-              </h3>
-              <p className="text-foreground/70 mb-4">
-                Soluzione professionale per affitti brevi. Sincronizzazione API Airbnb, gestione JWT e dashboard analitica.
-              </p>
-              <span className="inline-flex items-center text-[#0ea5e9] hover:text-[#0ea5e9]/80 transition-colors">
-                Richiedi Demo Privata 
-              </span>
-            </a>
-
-            {/* Quiz di Microbiologia */}
-            <a
-              href="https://svilupp0.github.io/dario-s-play/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white/50 rounded-lg p-6 shadow-sm border border-foreground/10 hover:shadow-md hover:scale-105 transition-all duration-300 block"
-            >
-              <h3 className="text-xl font-medium text-foreground mb-3">
-                Quiz di Microbiologia & AI
-              </h3>
-              <p className="text-foreground/70 mb-4">
-                Uno strumento che trasforma dispense universitarie in quiz logici tramite orchestrazione di LLM.
-              </p>
-              <span className="inline-flex items-center text-[#0ea5e9] hover:text-[#0ea5e9]/80 transition-colors">
-                Esplora Progetto 
-              </span>
-            </a>
-          </div>
-
-          {/* Link alla pagina progetti completa */}
-          <div className="mt-12 text-center">
-            <Link
-              href="/projects"
-              className="inline-block bg-[#0ea5e9] text-white px-8 py-3 rounded-full hover:bg-[#0ea5e9]/90 transition-colors"
-            >
-              Vedi Tutti i Progetti
-            </Link>
+          <div className="space-y-8">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="w-full flex flex-col md:flex-row md:justify-between md:items-center py-2 border-b border-foreground/10 last:border-b-0 relative"
+              >
+                <span className="text-[#0ea5e9] font-light text-lg w-8 flex-shrink-0">
+                  {(index + 1).toString().padStart(2, '0')}
+                </span>
+                <span
+                  className="text-foreground font-light text-xl cursor-pointer hover:text-[#0ea5e9] transition-colors flex-grow md:ml-4"
+                  onMouseEnter={() => setHoveredProject(index)}
+                  onMouseLeave={() => setHoveredProject(null)}
+                  onClick={() => window.location.href = project.link}
+                >
+                  {project.title}
+                </span>
+                <span className={`text-foreground/70 font-light text-lg text-center mt-2 md:mt-0 md:ml-4 flex-shrink-0 transition-transform duration-300 ${hoveredProject === index ? 'transform -translate-x-5' : ''}`}>
+                  {project.description}
+                </span>
+                {hoveredProject === index && (
+                  <>
+                    <span className="absolute top-1/2 right-100 text-white px-3 py-1 rounded-full transition-all duration-300 opacity-100 scale-105 z-50 -translate-y-1/2">
+                      {project.action}
+                    </span>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="absolute top-1/2 right-0 w-80 h-48 object-cover rounded-lg transition-all duration-300 opacity-100 scale-105 z-50 shadow-xl -translate-y-1/2"
+                    />
+                  </>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
