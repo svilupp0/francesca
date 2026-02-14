@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -114,10 +115,14 @@ export default function Home() {
                     <span className="absolute top-1/2 right-100 text-white px-3 py-1 rounded-full transition-all duration-300 opacity-100 scale-105 z-50 -translate-y-1/2">
                       {project.action}
                     </span>
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
+                      width={320}
+                      height={192}
                       className="absolute top-1/2 right-0 w-80 h-48 object-cover rounded-lg transition-all duration-300 opacity-100 scale-105 z-50 shadow-xl -translate-y-1/2"
+                      sizes="(max-width: 768px) 70vw, 320px"
+                      priority={index === 0}
                     />
                   </>
                 )}
