@@ -96,7 +96,7 @@ export default function Home() {
               textShadow: '0 0 60px rgba(14,165,233,0.4), 0 0 120px rgba(14,165,233,0.2)'
             }}
           >
-            Francesca Scarpellini
+            Francesca
           </motion.h1>
 
           <motion.p
