@@ -9,24 +9,24 @@ import { ArrowRight, Mail } from 'lucide-react';
 const projects = [
   {
     title: "Filiera Café",
-    description: "Sito web multi-concept a Lecce",
+    description: "Multi-concept website in Lecce",
     link: "https://filiera.vercel.app/",
     image: "/img/filiera.jpg",
-    action: "Vedi Live"
+    action: "View Live"
   },
   {
     title: "Women In Net (PWA)",
-    description: "PWA per community tennis",
+    description: "PWA for a tennis community",
     link: "https://women-in-tennis.vercel.app/",
     image: "/img/WIN.jpg",
-    action: "Vedi Live"
+    action: "View Live"
   },
   {
     title: "SEO Testing Tool",
-    description: "CLI tool open source per SEO",
+    description: "Open source CLI tool for SEO",
     link: "https://github.com/svilupp0/SEO-Testing-Tool",
     image: "/img/seo-tool.jpg",
-    action: "Vedi Repository"
+    action: "View Repository"
   }
 ];
 
@@ -155,7 +155,7 @@ export default function Home() {
               variants={fadeInUp}
               className="text-xs md:text-sm font-semibold tracking-[0.3em] uppercase text-[#0ea5e9]/60"
             >
-              Chi Sono
+              About
             </motion.span>
 
             <motion.h2
@@ -170,13 +170,13 @@ export default function Home() {
               className="space-y-6 text-[#374151]/80 font-extralight text-lg md:text-xl leading-relaxed"
             >
               <p>
-                Mio padre è il classico scienziato pazzo: perito di laboratorio, stampante 3D sempre accesa e circuiti stampati sparsi ovunque. Il suo capolavoro? Un cingolato telecomandato per portare la spesa a mia madre al quarto piano senza ascensore. Sono cresciuta così: smontando, rompendo e cercando soluzioni a problemi che altri non sapevano di avere.
+                My father is the classic mad scientist: a lab technician with a 3D printer always running and circuit boards scattered everywhere. His masterpiece? A remote-controlled tracked vehicle to carry groceries up to my mother on the fourth floor — no elevator. That&apos;s how I grew up: taking things apart, breaking them, and finding solutions to problems others didn&apos;t even know they had.
               </p>
               <p>
-                Dopo anni passati tra ristorazione e immobiliare — dove ho imparato a gestire persone e imprevisti senza impazzire — ho deciso di tornare a quel &apos;fare&apos; che avevo in casa. Oggi mi definisco una AI-Assisted Developer. Non ho un percorso accademico standard, ma passo le giornate su VSCode, Cline e Qodo a &apos;pasticciare&apos; (seriamente) con l&apos;Intelligenza Artificiale.
+                After years in hospitality and real estate — where I learned to handle people and unexpected situations without losing my mind — I decided to go back to that &apos;making&apos; spirit I had at home. Today I call myself an AI-Assisted Developer. I don&apos;t have a standard academic background, but I spend my days in VSCode, Cline and Qodo &apos;tinkering&apos; (seriously) with Artificial Intelligence.
               </p>
               <p>
-                Il mio obiettivo? Creare strumenti tecnici che abbiano però un senso umano. Un po&apos; come quel cingolato: magari strano da vedere, ma maledettamente utile.
+                My goal? To build technical tools that still make human sense. A bit like that tracked vehicle: maybe odd to look at, but incredibly useful.
               </p>
             </motion.div>
           </div>
@@ -196,14 +196,14 @@ export default function Home() {
             variants={fadeInUp}
             className="text-xs md:text-sm font-semibold tracking-[0.3em] uppercase text-[#0ea5e9]/60"
           >
-            Progetti
+            Projects
           </motion.span>
 
           <motion.h2
             variants={fadeInUp}
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#374151] mt-3 mb-12"
           >
-            Lavori Selezionati
+            Selected Works
           </motion.h2>
 
           {/* List with left border */}
@@ -265,7 +265,7 @@ export default function Home() {
               href="/projects"
               className="inline-flex items-center gap-2 text-[#0ea5e9] font-medium hover:underline underline-offset-4 transition-all group"
             >
-              Vedi tutti i progetti
+              View all projects
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </motion.div>
@@ -294,21 +294,21 @@ export default function Home() {
             variants={fadeInUp}
             className="text-xs md:text-sm font-semibold tracking-[0.3em] uppercase text-[#0ea5e9]/60"
           >
-            Contatto
+            Contact
           </motion.span>
 
           <motion.h2
             variants={fadeInUp}
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#374151] mt-3 mb-6"
           >
-            Iniziamo un viaggio insieme?
+            Shall we start a journey together?
           </motion.h2>
 
           <motion.p
             variants={fadeInUp}
             className="text-[#374151]/70 font-extralight text-lg md:text-xl mb-10 max-w-xl mx-auto"
           >
-            Se hai un&apos;idea da sviluppare o semplicemente vuoi scambiare due parole sul futuro della tecnologia e dell&apos;AI, scrivimi pure. Sarà un piacere conoscerti.
+            If you have an idea to develop or simply want to chat about the future of technology and AI, feel free to reach out. It would be a pleasure to meet you.
           </motion.p>
 
           <motion.a

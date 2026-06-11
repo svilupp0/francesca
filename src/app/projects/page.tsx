@@ -7,66 +7,66 @@ import { ArrowLeft, ArrowRight, Github, Lock, Mail } from 'lucide-react';
 const projects = [
   {
     title: "Women In Net (PWA)",
-    description: "Una Progressive Web App per la community del tennis. Gestione profili, calendario interattivo e geolocalizzazione dei campi.",
-    longDescription: "Progetto completo con autenticazione utenti, sistema di prenotazione campi, integrazione mappe per trovare circoli tennistici nelle vicinanze. Sviluppato con Next.js e ottimizzato come PWA per installazione mobile.",
+    description: "A Progressive Web App for a tennis community. Profile management, interactive calendar and court geolocation.",
+    longDescription: "Full project with user authentication, court booking system, and map integration to find tennis clubs nearby. Built with Next.js and optimised as a PWA for mobile installation.",
     technologies: ["Next.js", "PWA", "Geolocation API", "Calendar Integration"],
     link: "https://women-in-tennis.vercel.app/",
-    linkText: "Vedi Live",
+    linkText: "View Live",
     image: "/img/WIN.jpg",
     isPrivate: false,
     isGithub: false
   },
   {
     title: "Great Stay Salento - Property Manager",
-    description: "Soluzione professionale per affitti brevi. Sincronizzazione API Airbnb, gestione JWT e dashboard analitica.",
-    longDescription: "Sistema completo di gestione proprietà per affitti brevi con sincronizzazione automatica calendari Airbnb, Booking.com. Dashboard analitica per tracciare prenotazioni, revenue e occupancy rate. Sistema di autenticazione sicuro con JWT e gestione multi-utente.",
+    description: "Professional solution for short-term rentals. Airbnb API sync, JWT authentication and analytics dashboard.",
+    longDescription: "Complete property management system for short-term rentals with automatic calendar sync for Airbnb and Booking.com. Analytics dashboard to track bookings, revenue and occupancy rate. Secure authentication with JWT and multi-user management.",
     technologies: ["Next.js", "Airbnb API", "JWT Auth", "Analytics Dashboard", "Database"],
     link: "mailto:francescascarpellini327@gmail.com",
-    linkText: "Richiedi Demo Privata",
+    linkText: "Request Private Demo",
     isPrivate: true,
     image: "/img/prop.manag.jpg",
     isGithub: false
   },
   {
-    title: "Portfolio Ricercatrice - Full Stack Platform",
-    description: "Piattaforma completa per ricercatori con blog, portfolio progetti, shop online e sistema di autenticazione.",
-    longDescription: "Applicazione full-stack completa costruita con Next.js 16 e React 19. Include un CMS personalizzato con editor rich-text TipTap, sistema multilingue (IT/EN), autenticazione OAuth con Google, integrazione Cloudinary per upload immagini, e dashboard amministrativa per gestire contenuti. Database PostgreSQL con Prisma ORM per garantire performance e scalabilità.",
+    title: "Researcher Portfolio - Full Stack Platform",
+    description: "Complete platform for researchers with blog, project portfolio, online shop and authentication system.",
+    longDescription: "Full-stack application built with Next.js 16 and React 19. Includes a custom CMS with TipTap rich-text editor, multilingual support (IT/EN), Google OAuth authentication, Cloudinary integration for image uploads, and an admin dashboard for content management. PostgreSQL database with Prisma ORM for performance and scalability.",
     technologies: ["Next.js 16", "React 19", "TypeScript", "PostgreSQL", "Prisma ORM", "NextAuth.js", "TipTap Editor", "Cloudinary", "Tailwind CSS"],
     link: "https://github.com/svilupp0/PortfolioFS-NextNEW",
-    linkText: "Vedi Repository",
+    linkText: "View Repository",
     image: "/img/portf-fs.jpg",
     isPrivate: false,
     isGithub: true
   },
   {
-    title: "Quiz di Microbiologia & AI",
-    description: "Uno strumento che trasforma dispense universitarie in quiz logici tramite orchestrazione di LLM.",
-    longDescription: "Applicazione educativa che utilizza Large Language Models per analizzare materiale didattico universitario e generare automaticamente quiz interattivi. Sistema di orchestrazione AI che comprende il contesto e crea domande pertinenti con feedback immediato.",
+    title: "Microbiology & AI Quiz",
+    description: "A tool that transforms university lecture notes into logical quizzes through LLM orchestration.",
+    longDescription: "Educational application that uses Large Language Models to analyse university study materials and automatically generate interactive quizzes. AI orchestration system that understands context and creates relevant questions with immediate feedback.",
     technologies: ["AI/LLM", "OpenAI API", "React", "Quiz Logic"],
     link: "https://svilupp0.github.io/dario-s-play/",
-    linkText: "Esplora Progetto",
+    linkText: "Explore Project",
     image: "/img/micro.adv.jpg",
     isPrivate: false,
     isGithub: false
   },
   {
     title: "SEO Testing Tool",
-    description: "Tool CLI open source per esperimenti SEO con analisi statistica e integrazione Google Search Console.",
-    longDescription: "CLI tool open source per condurre esperimenti SEO in modo rigoroso. Utilizza il test di Welch's t-test per valutare la significatività statistica dei cambiamenti SEO, integrazione con Google Search Console API per raccolta dati automatica, e database SQLite locale con Drizzle ORM. Nessuna configurazione cloud richiesta: tutto gira in locale o via Docker.",
+    description: "Open source CLI tool for SEO experiments with statistical analysis and Google Search Console integration.",
+    longDescription: "Open source CLI tool for running rigorous SEO experiments. Uses Welch's t-test to evaluate statistical significance of SEO changes, integrates with Google Search Console API for automatic data collection, and stores results in a local SQLite database with Drizzle ORM. No cloud setup required: runs locally or via Docker.",
     technologies: ["TypeScript", "Node.js", "SQLite", "Drizzle ORM", "Google OAuth2", "Docker", "Railway"],
     link: "https://github.com/svilupp0/SEO-Testing-Tool",
-    linkText: "Vedi Repository",
+    linkText: "View Repository",
     image: "/img/seo-tool.jpg",
     isPrivate: false,
     isGithub: true
   },
   {
     title: "Filiera Café",
-    description: "Sito web per locale multi-concept a Lecce: specialty coffee, enoteca naturale e bottega km0.",
-    longDescription: "Sito web completo per Filiera Café, un locale multi-concept nel cuore di Lecce. Include sezione menu interattiva, vetrina dei produttori locali, e-commerce shop per prodotti km0, calendario eventi e sezione community. Sviluppato con supporto multilingua (IT/EN/FR) per accogliere turisti internazionali.",
-    technologies: ["Next.js", "Tailwind CSS", "Multilingua (IT/EN/FR)", "E-commerce"],
+    description: "Website for a multi-concept venue in Lecce: specialty coffee, natural wine bar and zero-km shop.",
+    longDescription: "Full website for Filiera Café, a multi-concept venue in the heart of Lecce. Includes an interactive menu section, local producers showcase, e-commerce shop for zero-km products, events calendar and community section. Built with multilingual support (IT/EN/FR) to welcome international visitors.",
+    technologies: ["Next.js", "Tailwind CSS", "Multilingual (IT/EN/FR)", "E-commerce"],
     link: "https://filiera.vercel.app/",
-    linkText: "Vedi Live",
+    linkText: "View Live",
     image: "/img/filiera.jpg",
     isPrivate: false,
     isGithub: false
@@ -98,7 +98,7 @@ export default function ProjectsPage() {
             className="inline-flex items-center gap-2 text-[#374151] hover:text-[#0ea5e9] transition-colors font-medium"
           >
             <ArrowLeft className="w-4 h-4" />
-            Torna alla Home
+            Back to Home
           </Link>
         </div>
       </nav>
@@ -121,7 +121,7 @@ export default function ProjectsPage() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#374151] mt-3"
           >
-            I Miei Progetti
+            My Projects
           </motion.h1>
 
           <motion.p
@@ -130,8 +130,8 @@ export default function ProjectsPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-[#374151]/70 font-extralight text-lg md:text-xl mt-6 max-w-2xl"
           >
-            Una collezione di progetti che uniscono creatività, tecnologia e intelligenza artificiale.
-            Ogni progetto rappresenta un passo nel mio percorso di crescita come developer.
+            A collection of projects combining creativity, technology and artificial intelligence.
+            Each project represents a step in my growth journey as a developer.
           </motion.p>
         </div>
       </header>
@@ -189,7 +189,7 @@ export default function ProjectsPage() {
                     {project.isPrivate && (
                       <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-[#374151]/10 text-[#374151]/70 text-xs font-medium rounded-full">
                         <Lock className="w-3 h-3" />
-                        Privato
+                        Private
                       </span>
                     )}
                   </div>
@@ -251,15 +251,15 @@ export default function ProjectsPage() {
           />
 
           <span className="text-xs md:text-sm font-semibold tracking-[0.3em] uppercase text-[#0ea5e9]/60">
-            Collaboriamo
+            Let's Collaborate
           </span>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#374151] mt-3 mb-6">
-            Hai un progetto in mente?
+            Got a project in mind?
           </h2>
 
           <p className="text-[#374151]/70 font-extralight text-lg mb-10">
-            Sono sempre aperta a nuove collaborazioni e sfide interessanti.
+            I'm always open to new collaborations and interesting challenges.
           </p>
 
           <motion.a
@@ -269,7 +269,7 @@ export default function ProjectsPage() {
             whileTap={{ scale: 0.98 }}
           >
             <Mail className="w-5 h-5" />
-            Contattami
+            Contact Me
           </motion.a>
         </motion.div>
       </section>
