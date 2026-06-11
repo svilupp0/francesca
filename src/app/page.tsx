@@ -27,6 +27,13 @@ const projects = [
     link: "https://github.com/svilupp0/SEO-Testing-Tool",
     image: "/img/seo-tool.jpg",
     action: "View Repository"
+  },
+  {
+    title: "Maison Cinque",
+    description: "Holiday rental website in Lecce",
+    link: "https://www.maisoncinque.com/",
+    image: "/img/maison-cinque.png",
+    action: "View Live"
   }
 ];
 

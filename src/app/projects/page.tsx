@@ -70,6 +70,17 @@ const projects = [
     image: "/img/filiera.jpg",
     isPrivate: false,
     isGithub: false
+  },
+  {
+    title: "Maison Cinque",
+    description: "Elegant website for a holiday rental in Lecce with booking integration and editorial design.",
+    longDescription: "Website for Maison Cinque, a holiday accommodation in Lecce. Features an immersive full-screen layout with editorial typography, sections for kitchen and gallery, and a direct booking CTA. Designed to convey the slow-living atmosphere of Salento to an international audience.",
+    technologies: ["Next.js", "Tailwind CSS"],
+    link: "https://www.maisoncinque.com/",
+    linkText: "View Live",
+    image: "/img/maison-cinque.png",
+    isPrivate: false,
+    isGithub: false
   }
 ];
 
