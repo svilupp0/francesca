@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl = SITE_URL;
-const siteTitle = "Francesca Scarpellini | AI-Assisted Developer & Web Designer";
+const siteTitle = "Francesca Scarpellini | Freelance Web & Software Developer";
 const siteDescription =
-  "Freelance AI-Assisted Developer specializing in modern web applications built with Next.js, React, and AI tools. Portfolio of web projects, PWAs, and open-source tools.";
+  "Freelance Web & Software Developer specializing in websites, web apps, and custom software built with Next.js, React, and modern tools. Portfolio of projects and open-source tools.";
 
 export const metadata: Metadata = {
   title: {
@@ -45,7 +45,7 @@ const jsonLdString = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Francesca Scarpellini",
-  jobTitle: "AI-Assisted Developer & Web Designer",
+  jobTitle: "Freelance Web & Software Developer",
   url: siteUrl,
   sameAs: ["https://github.com/svilupp0"],
 });

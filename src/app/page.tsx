@@ -113,7 +113,7 @@ export default function Home() {
             className="text-xl md:text-2xl lg:text-3xl font-extralight text-white/90 mt-4 tracking-wide"
             style={{ textShadow: '0 0 30px rgba(14,165,233,0.25)' }}
           >
-            AI-Assisted Developer & Operations Specialist
+            Freelance Web & Software Developer
           </motion.p>
 
           {/* Animated underline */}
