@@ -186,6 +186,16 @@ export default function Home() {
                 My goal? To build technical tools that still make human sense. A bit like that tracked vehicle: maybe odd to look at, but incredibly useful.
               </p>
             </motion.div>
+
+            <motion.div variants={fadeInUp} className="mt-8">
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 text-[#0ea5e9] text-sm font-medium hover:underline underline-offset-4 transition-all group"
+              >
+                Blog
+                <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </motion.div>
           </div>
         </motion.div>
       </section>
