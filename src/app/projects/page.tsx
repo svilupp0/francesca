@@ -54,11 +54,11 @@ const projects = [
     description: "Open source CLI tool for SEO experiments with statistical analysis and Google Search Console integration.",
     longDescription: "Open source CLI tool for running rigorous SEO experiments. Uses Welch's t-test to evaluate statistical significance of SEO changes, integrates with Google Search Console API for automatic data collection, and stores results in a local SQLite database with Drizzle ORM. No cloud setup required: runs locally or via Docker.",
     technologies: ["TypeScript", "Node.js", "SQLite", "Drizzle ORM", "Google OAuth2", "Docker", "Railway"],
-    link: "https://github.com/svilupp0/SEO-Testing-Tool",
-    linkText: "View Repository",
+    link: "https://www.npmjs.com/package/seo-testing-tool",
+    linkText: "View on npm",
     image: "/img/seo-tool.jpg",
     isPrivate: false,
-    isGithub: true
+    isGithub: false
   },
   {
     title: "Filiera Café",
